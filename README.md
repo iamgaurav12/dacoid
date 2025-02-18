@@ -3,7 +3,7 @@
 An interactive quiz platform that allows users to take quizzes, view their scores, and toggle between dark and light themes.
 
 ## Deployed App
-You can access the deployed app [here](https://your-deployed-app-link.com).
+You can access the deployed app [here](https://dacoid-iota.vercel.app/).
 
 ## Features
 - **Dark Mode**: Toggle between dark and light themes.

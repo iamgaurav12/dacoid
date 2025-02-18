@@ -15,8 +15,8 @@ You can access the deployed app [here](https://your-deployed-app-link.com).
 ## Instructions to Run Locally
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/quiz-platform.git
-    cd quiz-platform
+    git clone https://github.com/iamgaurav12/darcoid
+    cd darcoid
     ```
 
 2. **Install dependencies**:

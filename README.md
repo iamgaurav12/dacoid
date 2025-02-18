@@ -15,7 +15,7 @@ You can access the deployed app [here](https://your-deployed-app-link.com).
 ## Instructions to Run Locally
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/iamgaurav12/darcoid
+    git clone https://github.com/iamgaurav12/dacoid
     cd darcoid
     ```
 

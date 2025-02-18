@@ -16,7 +16,7 @@ You can access the deployed app [here](https://your-deployed-app-link.com).
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/iamgaurav12/dacoid
-    cd darcoid
+    cd dacoid
     ```
 
 2. **Install dependencies**:

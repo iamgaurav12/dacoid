@@ -2,6 +2,9 @@
 
 An interactive quiz platform that allows users to take quizzes, view their scores, and toggle between dark and light themes.
 
+## Deployed App
+You can access the deployed app [here](https://your-deployed-app-link.com).
+
 ## Features
 - **Dark Mode**: Toggle between dark and light themes.
 - **Quiz Functionality**: Answer multiple-choice and integer-based questions.
@@ -63,14 +66,4 @@ An interactive quiz platform that allows users to take quizzes, view their score
 - **IndexedDB**: Client-side storage for saving quiz history.
 - **Vite**: Next-generation frontend tooling.
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
 
-## Deployed App
-You can access the deployed app [here](https://your-deployed-app-link.com).

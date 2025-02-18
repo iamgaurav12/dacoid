@@ -8,6 +8,7 @@ function Quiz({ finishQuiz, darkMode }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [timeLeft, setTimeLeft] = useState(30);
+  const [totalTimeLeft, setTotalTimeLeft] = useState(1800); // 30 minutes in seconds
   const [feedback, setFeedback] = useState("");
 
   const handleAnswer = useCallback((answer) => {
@@ -51,12 +52,23 @@ function Quiz({ finishQuiz, darkMode }) {
     return () => clearInterval(timer);
   }, [timeLeft, handleAnswer]);
 
+  useEffect(() => {
+    if (totalTimeLeft === 0) {
+      handleFinishQuiz();
+    }
+    const totalTimer = setInterval(() => setTotalTimeLeft((prev) => prev - 1), 1000);
+    return () => clearInterval(totalTimer);
+  }, [totalTimeLeft]);
+
   return (
     <div className={`max-w-2xl mx-auto p-6 font-poppins ${darkMode ? "bg-gradient-to-r from-gray-700 to-gray-900" : "bg-gradient-to-r from-white to-gray-100"} rounded-lg shadow-lg transition-all duration-300 ease-in-out sm:p-4 md:p-6 lg:p-8 xs:p-2`}>
       <h2 className={`text-2xl font-bold ${darkMode ? "text-yellow-400" : "text-black"} mb-4 sm:text-xl md:text-2xl lg:text-3xl xs:text-lg`}>
         Question {currentQuestion + 1}
       </h2>
       <Timer timeLeft={timeLeft} darkMode={darkMode} />
+      <p className={`text-lg ${darkMode ? "text-gray-300" : "text-black"} mb-4 sm:text-base md:text-lg lg:text-xl xs:text-sm`}>
+        Total Time Left: {Math.floor(totalTimeLeft / 60)}:{totalTimeLeft % 60 < 10 ? `0${totalTimeLeft % 60}` : totalTimeLeft % 60}
+      </p>
       <Question
         question={quizData[currentQuestion]}
         handleAnswer={handleAnswer}

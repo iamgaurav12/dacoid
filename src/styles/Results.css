@@ -1,0 +1,47 @@
+/* Results.css */
+.results {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .results h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .results p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .results button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #2ecc71; /* Green for restart button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .results button:nth-child(3) {
+    background-color: #3498db; /* Blue for dashboard button */
+  }
+  
+  .results button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+  
+  .results button:nth-child(3):hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }

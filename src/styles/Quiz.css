@@ -1,0 +1,103 @@
+/* Quiz.css */
+.quiz {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+  }
+  
+  .question p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* .question button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .question button:hover {
+    background-color: #2980b9;
+  } */
+  
+  /* Quiz.css */
+.question input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .question button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .question button:hover {
+    background-color: #2980b9;
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2ecc71; /* Green for correct */
+  }
+  
+  .feedback.incorrect {
+    color: #e74c3c; /* Red for incorrect */
+  }
+  /* Quiz.css */
+/* Quiz.css */
+.finish-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #e74c3c; /* Red color for finish button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .finish-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
